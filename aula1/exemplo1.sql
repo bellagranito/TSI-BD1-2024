@@ -49,3 +49,19 @@ VALUES ('Murilo Silva', 'murilosilva@gmail.com', 100, 'rua Pedro Cavalo', 750, '
 
 --mosrar registros de tabela cliente
 SELECT * FROM cliente;
+
+--ATUALIZAR TABELA CIDADE
+UPDATE cidade SELECT
+nome = 'Belo Horizonte',
+estado = 'MG'
+WHERE id = 1;
+
+--ATUALIZAR TABELA cliente
+UPDATE cidade SELECT
+nome = 'cocao',
+estado = 'cocao@mail.com'
+id_cidade = 101
+WHERE id = 2;
+
+--deleta registro de uma tabela
+DELETE FROM cidade WHERE id = 1;
